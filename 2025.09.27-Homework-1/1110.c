@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 int main(int argc, char** argv){
-    int a;
+    int a = 0;
     scanf("%d", &a);
-    //Я бы от дизни офигел, если бы и тут оказались нужны long
-    //long int)))))
-    printf("%d", a%10);
+    printf("%d", a % 10);
     return 0;
 }

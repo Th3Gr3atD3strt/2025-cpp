@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(int argc, char** argv){
-    int a;
-    int b;
+    int a = 0;
+    int b = 0;
     scanf("%d %d", &a, &b);
-	printf("Anton");
-	return 0;
+    printf("Anton");
+    return 0;
 }

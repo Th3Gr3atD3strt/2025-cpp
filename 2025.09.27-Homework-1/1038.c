@@ -1,14 +1,8 @@
 #include <stdio.h>
 
 int main(int argc, char** argv){
-    int a;
-    int arr[10] = {0, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-    int ans;
+    int a = 0;
     scanf("%d", &a);
-    ans = a/10 + arr[a%10];
-    printf("%d", ans);
+    printf("%d", (a+9)/10);
     return 0;
-    //Хотели  решение без иф-элс? 
-    // А типы данных можно любые? Получите, распишитесь. 
-    // P.S. Про -9 догадался потом
 }
