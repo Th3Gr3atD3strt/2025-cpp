@@ -20,7 +20,7 @@ int main(int argc, char ** argv){
         counter += 1;
     }
     // ПЕШКА ПЕШКА ПЕШКА ПЕШКА
-    if ( (c1 != 2) && (c2 - c1 == 1) && (l1 == l2) && (c1 != 1) ) {                  
+    if ( (c1 != 2) && (c2 - c1 == 1) && (l1 == l2) && (c1 != 1){                  
         printf("Pawn\n");
         counter += 1;
     }
@@ -55,7 +55,5 @@ int main(int argc, char ** argv){
     if (counter == 0){
         printf("Nobody\n");
     }
-    //printf("PROVERKA");
-    //printf("%d", l2 - l1);
     return 0;
 }
