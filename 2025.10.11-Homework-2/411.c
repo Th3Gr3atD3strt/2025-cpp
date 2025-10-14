@@ -7,7 +7,6 @@ int main(int argc, char ** argv){
     long double c = 0;
     scanf("%Lf %Lf %Lf", &a, &b, &c);
     long double d = b * b - (4 * a * c);
-    //printf ("%lf, дискра \n", d);
     if (a == 0){
         if ((b == 0) && (c == 0)){
             printf("-1");

@@ -91,8 +91,6 @@ int main(int argc, char ** argv){
             c22 = a2;
         }
     }
-    //printf("%d %d %d \n", a11, b11, c11);
-    //printf("%d %d %d", a22, b22, c22);
     if ((a11 == a22) && (b11 == b22) && (c11 == c22)){
         printf("Boxes are equal");
     }
