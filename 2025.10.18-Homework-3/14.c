@@ -36,6 +36,7 @@ int main(int argc, char ** argv){
         }
     }
     gcd = a;
-    printf("%d", a1*b1/gcd);
+    printf("%d", a1 * b1 / gcd);
+    return 0;
 }
 

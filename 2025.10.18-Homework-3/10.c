@@ -7,14 +7,12 @@ int main(int argc, char ** argv){
     long long int d = 0;
     scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
     int x = -100;
-    //int eq = x * x * x * a + b * x * x + c * x + d;
-    
     while(x <= 100){
         long long int eq = x * x * x * a + b * x * x + c * x + d;
         if (eq == 0){
             printf("%d ", x);
         }
-        x ++;
+        x++;
     }
     return 0;
 }
