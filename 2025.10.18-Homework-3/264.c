@@ -22,7 +22,7 @@ int main(int argc, char ** argv){
             }
         }
         if (counter > ans){
-                ans = counter;
+            ans = counter;
         } 
     }
     printf("%d", ans);

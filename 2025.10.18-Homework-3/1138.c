@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int main(int argc, char ** argv){
+int main(int argc, char** argv){
+    int a = 0;
     int max = 0;
     int second_max = 0;
-    int a = 0;
-    while (1 > 0){
+    do {
         scanf("%d", &a);
-        
         if (a == 0){
             break;
         }
@@ -18,7 +17,7 @@ int main(int argc, char ** argv){
             second_max = a;
         }
     }
+    while (1 > 0);    
     printf("%d", second_max);
     return 0;
 }
-

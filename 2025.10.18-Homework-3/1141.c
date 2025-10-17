@@ -1,28 +1,28 @@
 #include <stdio.h>
 
-int main(int argc, char ** argv){
-    int ans = 1;
-    int cur_ctr = 1;
-    int previous = 0;
+int main(int argc, char** argv){
     int a = 0;
-    while (1 > 0){
+    int ans = 0;
+    int previous_num = 0;
+    int current_counter = 1;
+    do {
         scanf("%d", &a);
         if (a == 0){
             break;
         }
-        if (previous == a){
-            cur_ctr += 1;
-            if (cur_ctr > ans){
-                ans = cur_ctr;
-                previous = a;
-            }
+        if (a == previous_num){
+            current_counter += 1;
+            previous_num = a;
         }
         else{
-            cur_ctr = 1;
-            previous = a;
+            current_counter = 1;
+            previous_num = a;
         }
+        if (current_counter > ans){
+            ans = current_counter;
+        }  
     }
-    printf("%d", ans);   
+    while (1 > 0);
+    printf("%d", ans);
     return 0;
 }
-
