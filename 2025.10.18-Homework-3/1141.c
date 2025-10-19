@@ -7,9 +7,6 @@ int main(int argc, char** argv){
     int current_counter = 1;
     do {
         scanf("%d", &a);
-        if (a == 0){
-            break;
-        }
         if (a == previous_num){
             current_counter += 1;
             previous_num = a;
@@ -22,7 +19,7 @@ int main(int argc, char** argv){
             ans = current_counter;
         }  
     }
-    while (1 > 0);
+    while (a != 0);
     printf("%d", ans);
     return 0;
 }
