@@ -4,7 +4,7 @@ int main(int argc, char** argv){
     int a = 0;
     int max = 0;
     int second_max = 0;
-    do {
+    do{
         scanf("%d", &a);
         if (a > max){
             second_max = max;

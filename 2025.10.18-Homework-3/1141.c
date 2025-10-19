@@ -5,7 +5,7 @@ int main(int argc, char** argv){
     int ans = 0;
     int previous_num = 0;
     int current_counter = 1;
-    do {
+    do{
         scanf("%d", &a);
         if (a == previous_num){
             current_counter += 1;
