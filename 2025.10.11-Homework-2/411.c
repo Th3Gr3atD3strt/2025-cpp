@@ -30,8 +30,10 @@ int main(int argc, char ** argv){
     }
     else if (d > 0){
         printf("2 \n");
-        printf("%Lf \n", (- b - (sqrt(d))) / (2 * a));
-        printf("%Lf", (- b + (sqrt(d))) / (2 * a));
+        long double ans1 = (- b - (sqrt(d))) / (2 * a);
+        printf("%Lf \n", ans1);
+        long double ans2 = (- b + (sqrt(d))) / (2 * a);
+        printf("%Lf", ans2);
     }
     else if (d < 0){
         printf("0");

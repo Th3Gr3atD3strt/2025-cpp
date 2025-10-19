@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -57,7 +49,7 @@ int main(int argc, char ** argv){
             c11 = a1;
         }
     }
-    //сортировка второго сета
+
     if ((a2 >= b2) && (a2 >= c2)){
         a22 = a2;
         if (b2 >= c2){

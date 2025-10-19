@@ -43,7 +43,7 @@ int main(int argc, char ** argv){
     }
      
     // КОРОЛЕВИШНА КОРОЛЕВИШНА КОРОЛЕВИШНА КОРОЛЕВИШНА под вопросом
-    if(((delta == 1) && (c1 == c2)) || ((delta ==0) && abs(c1 - c2) == 1) || ((abs(c1-c2) == 1) && (delta == 1))){
+    if(((delta == 1) && (c1 == c2)) || ((delta == 0) && abs(c1 - c2) == 1) || ((abs(c1 - c2) == 1) && (delta == 1))){
         printf("King\n");
         counter += 1;
     }
