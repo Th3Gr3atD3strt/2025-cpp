@@ -101,7 +101,7 @@ int get(int index){
     }
     else {
         std::cout << "Неправильный индекс!!!";
-        return 1488;
+        return 1337;
     }
 }
 
@@ -136,15 +136,18 @@ void file_write(const char* path){
 }
 
 void file_read(const char* path, int file_size){
-    //необходимо заранее знать длину файла в файловом объекте
-    int new_array[file_size];
+    //необходимо заранее знать количество элементов массива в бинаринике
+    int* new_arr = new int[file_size]();
     FILE* file_ptr = NULL; 
     file_ptr = fopen(path, "wb");
     if (file_ptr == NULL){
         std::cout << "Ошибка открытия файла";
     }
-    fread(new_array, sizeof(int), file_size, file_ptr);
-    arr = new_array;
+    fread(new_arr, sizeof(int), file_size, file_ptr);
+    delete [] arr;
+    current_volume = 0;
+    capacity = 0;
+    arr = new_arr;
     current_volume = file_size;
     capacity = file_size;
     fclose(file_ptr);
@@ -154,7 +157,7 @@ void file_read(const char* path, int file_size){
 
 int main(){
 
-    //     Очень много баловства с методами
+    //Очень много баловства с методами
     ArrayList arrr(1);
     arrr.add(0);
     arrr.add(1);
@@ -177,6 +180,5 @@ int main(){
     //arrr.insert(0, 876);
     arrr.print();
     std::cout << arrr.contains(1431);
-    //arrr.file_write("xyeta.bin");
     return 0;
 }
